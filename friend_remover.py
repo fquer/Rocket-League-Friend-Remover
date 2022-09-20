@@ -12,8 +12,7 @@ dname = os.path.dirname(abspath)
 os.chdir(dname)
 
 def remover(file):
-    x, y = pyautogui.locateCenterOnScreen(file + '.PNG', confidence = 0.9)
-    x = x - 1366
+    x, y = pyautogui.locateCenterOnScreen('images\\' + file + '.PNG', confidence = 0.9)
     pyautogui.moveTo()
     sleep(0.5)
     pyautogui.click(x, y)
